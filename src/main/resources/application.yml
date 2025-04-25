@@ -19,6 +19,6 @@ spring:
 server:
   port: 8080 
 
-# myapp.url.int: http:inturl.com
+myapp.url.int: http:inturl.com
 # myapp.url.staging: http:stgurl.com
-myapp.url.prod: http:produrl.com
+# myapp.url.prod: http:produrl.com
