@@ -32,12 +32,16 @@ public class TodoController {
 
     @PostMapping
     public Todo createTodo(@RequestBody Todo todo) {
-    
+        if (todo == null) {
+            todo.setCompleted(false);
+            return todo;
+        }
         return todoRepository.save(todo);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Todo> getTodoById(@PathVariable Long id) {
+
         return todoRepository.findById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
