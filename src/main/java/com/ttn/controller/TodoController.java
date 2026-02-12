@@ -51,6 +51,7 @@ public class TodoController {
             throw new TTNException(ErrorCode.INVALID_FORMAT);
         }
         
+        System.out.println("Todo: " + todo);
         todo.setCompleted(false);
         return todoRepository.save(todo);
     }
