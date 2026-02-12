@@ -1,12 +1,13 @@
 package com.ttn.common.util;
 
-import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Collection;
 import java.util.UUID;
 import java.util.regex.Pattern;
+
+import org.springframework.stereotype.Component;
 
 @Component
 public class Util {
@@ -117,7 +118,5 @@ public class Util {
         }
     }
 
-    public boolean isEmptyString(String str) {
-        return str == null || str.trim().isEmpty();
-    }
+
 } 

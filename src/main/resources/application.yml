@@ -31,6 +31,8 @@ springdoc:
   show-actuator: true
   packages-to-scan: com.ttn.controller
 
-myapp.url.int: http:inturl.com
-# myapp.url.staging: http:stgurl.com
+myapp:
+  url:
+#    int: http://inturl.com
+    staging: http://stgurl.com
 # myapp.url.prod: http:produrl.com
